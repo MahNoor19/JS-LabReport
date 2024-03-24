@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Java Script</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.getElementById("demo").innerHTML = "My First JavaScript";
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- js in head  -->
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <!-- JS in body  -->
+    <h2>Demo JavaScript in Body</h2>
+
+    <p id="demo">A Paragraph</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+      }
+    </script>
+
+    <!-- Inner HTML  -->
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
+
+    <p id="demo"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML = 5 + 6;
+    </script>
+  
+    <!-- Statement -->
+    <!-- Declare 3 variables  -->
+    let a, b, c;
+    <!-- Assign the value 5 to a -->
+    a = 5;
+    <!-- Assign the value 6 to b  -->
+    b = 6;
+    <!-- Assign the sum of a and b to c -->
+    c = a + b;
+
+    <!-- Keywords -->
+    let x, y; x = 5 + 6; y = x * 10;
+      // Assignment operators
+      // Assign the value 5 to x
+      let x = 5;
+      // Assign the value 2 to y
+      let y = 2;
+      // Assign the value x + y to z:
+      let z = x + y;
+    <!-- // Addition operator -->
+      let x = 5;
+      let y = 2;
+      let z = x + y;
+    <!-- //Multiply Operator -->
+    let x = 5;
+    let y = 2;
+    let z = x * y;
+<script>
+    <!-- Data Types -->
+    // Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+</script>
+
+<!-- // JS Functions  -->
+// Function to calculate the sum of two numbers
+function add(a, b) {
+  return a + b;
+}
+
+// Function to calculate the difference of two numbers
+function subtract(a, b) {
+  return a - b;
+}
+
+// Function to calculate the product of two numbers
+function multiply(a, b) {
+  return a * b;
+}
+
+// Function to calculate the division of two numbers
+function divide(a, b) {
+  if (b !== 0) {
+    return a / b;
+  } else {
+    return "Cannot divide by zero!";
+  }
+}
+
+// Example usage of the functions
+console.log("Sum:", add(5, 3));          // Output: 8
+console.log("Difference:", subtract(8, 2)); // Output: 6
+console.log("Product:", multiply(4, 6));  // Output: 24
+console.log("Division:", divide(10, 2));   // Output: 5
+console.log("Division:", divide(8, 0));    // Output: Cannot divide by zero!
+
+
+<!-- Creating a js array  -->
+<script>
+  // Creating an array of numbers
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers); // Output: [1, 2, 3, 4, 5]
+
+// Creating an array of strings
+let fruits = ["Apple", "Banana", "Orange"];
+console.log(fruits); // Output: ["Apple", "Banana", "Orange"]
+
+// Creating an array of mixed data types
+let mixedArray = [1, "hello", true, { name: "John", age: 30 }];
+console.log(mixedArray); // Output: [1, "hello", true, Object]
+</script>
+
+<script>
+   //Accessing Array elements
+ let fruit = ["Apple", "Banana", "Orange", "Mango"];
+// Accessing the first element
+ let firstFruit = fruits[0];
+console.log("First fruit:", firstFruit);
+// Accessing the third element
+let thirdFruit = fruits[2];
+console.log("Third fruit:", thirdFruit); 
+// Accessing the last element
+let lastFruit = fruits[fruits.length - 1];
+console.log("Last fruit:", lastFruit);
+</script>
+<script>
+//Changing array elements
+let fruitss = ["Apple", "Banana", "Orange", "Mango"];
+
+// Change the second element to "Grapes"
+fruitss[1] = "Grapes";
+
+console.log(fruitss);
+//Converting array elements
+let values = [10, 20, 30, 40];
+
+// Convert the third element to a string
+values[2] = "Thirty";
+
+console.log(values);
+//Accessing the First Array Element
+const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+let fruitss = fruitss[0]; 
+//Accessing the Last Array Element
+const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+let fruitss = fruits[fruits.length - 1];
+
+//Looping Array Elements
+const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+//Date and time
+// const d = new Date();
+
+//new date constructor
+// const date = new Date();
+
+//getFullYear() Method
+const d = new Date("2021-03-25");
+d.getFullYear();
+
+//getDate() Method
+// const d = new Date("2021-03-25");
+// d.getDate();
+
+//getMinutes() Method
+// const d = new Date("2021-03-25");
+// d.getMinutes();
+
+//if statement
+let x = 10;
+
+if (x > 0) {
+    console.log("x is a positive number");
+}
+
+
+</script>
+<script>
+  //else statement
+  let x = -5;
+
+if (x > 0) {
+    console.log("x is a positive number");
+} else {
+    console.log("x is not a positive number");
+}
+</script>
+<script>
+  //else-if statement
+  let x = 0;
+
+if (x > 0) {
+    console.log("x is a positive number");
+} else if (x < 0) {
+    console.log("x is a negative number");
+} else {
+    console.log("x is zero");
+}
+</script>
+<script>
+  let day = "Monday";
+let message;
+
+switch (day) {
+    case "Monday":
+        message = "It's Monday!";
+        break;
+    case "Tuesday":
+        message = "It's Tuesday!";
+        break;
+    case "Wednesday":
+        message = "It's Wednesday!";
+        break;
+    case "Thursday":
+        message = "It's Thursday!";
+        break;
+    case "Friday":
+        message = "It's Friday!";
+        break;
+    case "Saturday":
+        message = "It's Saturday!";
+        break;
+    case "Sunday":
+        message = "It's Sunday!";
+        break;
+    default:
+        message = "Invalid day!";
+}
+
+console.log(message);
+
+// for loop
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+//for-in loop
+// const person = {fname:"John", lname:"Doe", age:25};
+
+// let text = "";
+// for (let x in person) {
+//   text += person[x];
+// }  
+
+//for-OF loop
+// const cars = ["BMW", "Volvo", "Mini"];
+
+// let text = "";
+// for (let x of cars) {
+//   text += x;
+// }
+
+//While loop
+while (i < 10) {
+  text += "The number is " + i;
+  i++;
+}
+
+//do-While loop
+do {
+  text += "The number is " + i;
+  i++;
+}
+while (i < 10);
+// Class Constructor
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+
+//Class Methods
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age() {
+    const date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+const myCar = new Car("Ford", 2014);
+document.getElementById("demo").innerHTML =
+"My car is " + myCar.age() + " years old.";
+</script>
+  </body>
+</html>
